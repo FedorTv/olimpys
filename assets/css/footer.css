@@ -1,0 +1,32 @@
+div.footer_content{
+	display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    height: 7vh;
+    background: black;
+    border-top-right-radius: 3.5vh;
+    border-top-left-radius: 3.5vh;
+}
+div.copyright{
+	grid-column: 2/6;
+	
+}
+div.copyright p{
+text-align: center;
+	font-size: 2.1vh;
+	margin: 2vh 0;
+	color: white;
+	cursor: default;
+	font-family: 'Lobster', cursive;
+}
+div.social{
+	grid-column: 9/12;
+	height: 3vh;
+	margin: 2vh 0;
+	text-align: center;
+}
+div.social img{
+	cursor: pointer;
+	width: 3vh;
+	height: 3vh;
+	margin: 0 1vh;
+}

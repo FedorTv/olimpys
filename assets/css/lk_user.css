@@ -1,0 +1,261 @@
+div.content_lk_user{
+	display: none;
+    grid-template-columns:1fr 4fr 8fr 1fr;
+    grid-template-rows:4vh 4vh 68vh 4vh;
+    background: rgba(255,255,255,0.8);
+}
+.title_page{
+	grid-column: 2/4;
+	grid-row: 2;
+	text-align: center;
+	font-size: 2.2vh;
+	margin: 0.5vh 0;
+	font-family: 'Lobster', cursive;
+}
+section.info_profile{
+	grid-row: 3;
+	grid-column: 2;
+	display: grid;
+	grid-template-rows: 13vh 13vh 5vh repeat(2,18.5vh) ;
+
+}
+section.info_profile img.photo_profile{
+	grid-row: 1;
+	width: 13vh;
+	height: 13vh;
+	margin-left: auto;
+    margin-right: auto;
+    border: 0.2vh solid #000000;
+    border-radius: 60px;
+}
+section.info_profile p.update_profile{
+	grid-row: 2;
+	text-align: center;
+	font-size: 2.2vh;
+	
+	margin: 5vh 10%;
+	font-family: 'Lobster', cursive;
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+section.info_profile p.update_profile:hover{
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+}
+section.info_profile p.title{
+	grid-row: 3;
+	text-align: center;
+	font-size: 2.2vh;
+	margin: 0.5vh 0;
+	font-family: 'Lobster', cursive;
+}
+section.info_profile p.fio{
+	grid-row: 4;
+	text-align: center;
+	font-size: 2.2vh;
+	margin: 1vh 0;
+	font-family: 'Lobster', cursive;
+}
+section.info_profile p.institution{
+	grid-row: 5;
+	text-align: center;
+	font-size: 2.2vh;
+	margin: 1vh 0;
+	font-family: 'Lobster', cursive;
+}
+section.info_olimp{
+	grid-row: 3;
+	grid-column: 3;
+	display: grid;
+	grid-template-rows: 4vh 4vh 60vh;
+}
+section.info_olimp p.title{
+	grid-row: 1;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 0;
+	font-family: 'Lobster', cursive;
+}
+section.info_olimp select.result_olimp{
+	grid-row: 2;
+	border: none;
+	color:white;
+	background: black;
+	font-size: 1.7vh;
+	margin: 0.5vh 0;
+	margin-right: 50%;
+	font-family: 'Lobster', cursive;
+}
+section.info_olimp section.items{
+	grid-row: 3;
+	display: grid;
+	grid-template-rows: repeat(6,10vh);
+	overflow: auto;
+}
+section.info_olimp section.items .item{
+	background: white;
+	height: 8vh;
+	border:0.2vh black solid;
+	margin: 0.9vh 0;
+	border-radius: 10vh;
+	display: grid;
+	grid-template-columns: 8vh 8fr 4fr;
+	grid-template-rows: 8vh;
+}
+section.info_olimp section.items .item:hover{
+	-webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.29);
+	-moz-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.29);
+	box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.29);
+	
+}
+section.info_olimp section.items .item .photo_olimp{
+	grid-column: 1;
+	grid-row: 1;
+	width: 7vh;
+	height: 7vh;
+	margin: 0.5vh auto;
+	border-radius: 10vh;
+}
+section.info_olimp section.items .item .name_olimp{
+	grid-column: 2;
+	grid-row: 1;
+	font-size: 1.7vh;
+	margin: auto 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+section.info_olimp section.items .item .position{
+	grid-column: 3;
+	grid-row: 1;
+	font-size: 1.7vh;
+	margin: auto 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+/*modal*/
+div.modal_window{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	left: 0;
+	top:0;
+	display: none;
+	grid-template-rows: 1fr 60vh 1fr;
+	grid-template-columns: 5fr 6fr 5fr;
+}
+/*update user*/
+div.modal_window section.update_user{
+	background: white;
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+	grid-row: 2;
+	grid-column: 2;
+	display: none;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 4vh 4vh 2.5vh repeat(6,6.5vh) 2.5vh 4vh 4vh;
+}
+div.modal_window section.update_user img.close{
+	grid-column: 3;
+	grid-row: 1;
+	width: 4vh;
+	height: 4vh;
+	margin-left: auto;
+}
+div.modal_window section.update_user img.close:hover{
+	transform: rotate(22.5deg);
+}
+div.modal_window section.update_user p.title{
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user input.name_user{
+	grid-column: 2;
+	grid-row: 4;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user input.surname_user{
+	grid-column: 2;
+	grid-row: 5;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user input.patronymic_user{
+	grid-column: 2;
+	grid-row: 6;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user select.institution{
+	grid-column: 2;
+	grid-row: 7;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+	
+}
+select.institution, select.institution option {
+    width:100%; 
+    overflow:hidden; 
+    white-space:nowrap; 
+    display: block;
+	overflow: hidden;
+    text-overflow:ellipsis;
+}
+div.modal_window section.update_user input.password{
+	grid-column: 2;
+	grid-row: 8;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user input.upload_photo{
+	grid-column: 2;
+	grid-row: 9;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	background: black;
+	color:white;
+	font-family: 'Lobster', cursive;
+}
+div.modal_window section.update_user p.save{
+	grid-column: 2;
+	grid-row: 11;
+	font-size: 2.2vh;
+	margin: auto 10%;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	background: black;
+	color: white;
+}
+div.modal_window section.update_user p.save:hover{
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+}

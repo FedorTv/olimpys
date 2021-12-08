@@ -1,0 +1,104 @@
+div.nav{
+	display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    height: 7vh;
+}
+div.end_olimp{
+	grid-column: 4/7;
+	height: 7vh;
+	background: black;
+	border-bottom-left-radius: 3.5vh;
+}
+div.record_olimp{
+	grid-column: 7/10;
+	height: 7vh;
+	background: black;
+	border-bottom-right-radius: 3.5vh;
+}
+div.nav p{
+	cursor: pointer;
+	text-align: center;
+	font-size: 2.1vh;
+	margin: 2vh 0;
+	color: white;
+	font-family: 'Lobster', cursive;
+}
+div.nav p:hover{
+	text-decoration: underline;
+	
+}
+div.user_panel{
+	grid-column: 11/12;
+	height: 5.2vh;
+	margin: 0.9vh 0;
+	text-align: center;
+}
+div.user_panel img{
+	cursor: pointer;
+	width: 5vh;
+	height: 5vh;
+	border: 0.2vh solid #000000;
+	border-radius: 60px;
+}
+div.user_panel:hover div.model_auth{
+	display: grid;
+}
+div.logo{
+	grid-column: 2/3;
+	height: 5.2vh;
+	margin: 0.9vh 0;
+	text-align: center;
+}
+div.logo img{
+	cursor: pointer;
+	width: 5vh;
+	height: 5vh;
+	border: 0.2vh solid #000000;
+	border-radius: 60px;
+}
+div.model_auth{
+	position: absolute;
+	left: 0;
+	top:5vh;
+	display: none;
+    grid-template-columns:repeat(16, 1fr);
+    height: auto;
+    width: 100%;
+}
+div.model_auth section.auth{
+	grid-column: 13;
+	background: black;
+	border-bottom-right-radius: 2vh;
+	border-top-left-radius: 2vh;
+	display: grid;
+	grid-template-rows: 1vh 4vh 1vh 4vh 1vh;
+}
+div.model_auth section.auth p.enter{
+	grid-row: 2/5;
+	font-size: 2.2vh;
+	margin: auto;
+	color: white;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+div.model_auth section.auth p.enter_profile{
+	grid-row: 2/3;
+	font-size: 1.8vh;
+	margin: auto;
+	color: white;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	border-bottom:0.2vh white solid;
+}
+div.model_auth section.auth p.exit{
+	grid-row: 4;
+	font-size: 2.2vh;
+	margin: auto;
+	color: white;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+div.model_auth section.auth p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}

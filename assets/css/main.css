@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url("../image/background/bg.png");
+
+	display: grid;
+    grid-template-columns: 2fr repeat(12, 1fr) 2fr;
+    grid-template-rows:7vh 3vh auto 3vh 7vh;
+} 
+div.blur{
+	grid-column: 1/15;
+	grid-row: 1/6;
+	background: rgba(0,0,0,0.1);
+}
+header{
+	height: 7vh;
+	grid-column: 2/14;
+	grid-row: 1;
+}
+article{
+	grid-column: 2/14;
+	grid-row: 3;
+	
+	
+	display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+
+footer{
+	height: 7vh;
+	grid-column: 2/14;
+	grid-row: 5;
+	
+}
+div.model_olimp_info{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	left: 0;
+	top:0;
+	display: none;
+	grid-template-rows: 1fr 80vh 1fr;
+	grid-template-columns: 3fr 10fr 3fr;
+}
+/*update user*/
+div.model_olimp_info section.content{
+	background: white;
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+	grid-row: 2;
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	grid-template-rows: 4vh 8vh 1.5vh 10vh 1.5vh 47vh 4vh 4vh ;
+}
+div.model_olimp_info section.content img.close{
+	grid-column: 3;
+	grid-row: 1;
+	width: 4vh;
+	height: 4vh;
+	margin-left: auto;
+}
+div.model_olimp_info section.content img.close:hover{
+	transform: rotate(22.5deg);
+}
+div.model_olimp_info section.content p.title{
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 2.2vh;
+	margin: auto 0;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+div.model_olimp_info section.content img.olimp_photo{
+	grid-column: 2;
+	grid-row: 4;
+	height: 10vh;
+	width: 10vh;
+	margin: auto;
+	border-radius: 5vh;
+	
+}
+div.model_olimp_info section.content p.about_olimp{
+	grid-column: 2;
+	grid-row: 6;
+	font-size: 2vh;
+	
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	overflow: auto;
+}
+div.model_olimp_info section.content p.date_publisher{
+	grid-column: 2;
+	grid-row: 7;
+	font-size: 2vh;
+	
+	text-align: left;
+	font-family: 'Lobster', cursive;
+	overflow: auto;
+}

@@ -1,0 +1,232 @@
+div.form{
+	display: none;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10vh 60vh 10vh;
+    
+}
+div.form section.registration{
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 4vh auto 4vh;
+    grid-template-rows: 4vh repeat(10,5.2vh) 4vh;
+    background: white;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+section.registration img{
+	grid-column: 3;
+	grid-row: 1;
+	width: 4vh;
+	height: 4vh;
+}
+section.registration img:hover{
+	transform: rotate(22.5deg);
+}
+section.registration p.title{
+	grid-column: 2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 3vh;
+	margin: 1.5vh 0;
+	color: black;
+	font-family: 'Lobster', cursive;
+}
+section.registration input.name{
+	grid-column: 2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+
+}
+section.registration input.surname{
+	grid-column: 2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration input.patronymic{
+	grid-column: 2;
+	grid-row: 5;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration .institution{
+	grid-column: 2;
+	grid-row: 6;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration input.login{
+	grid-column: 2;
+	grid-row: 7;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration input.password{
+	grid-column: 2;
+	grid-row: 8;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration input.repassword{
+	grid-column: 2;
+	grid-row: 9;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.registration p.enter{
+	grid-column: 2;
+	grid-row: 10;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	width: 60%;
+	cursor: pointer;
+	font-family: 'Lobster', cursive;
+}
+section.registration p.enter:hover{
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+}
+section.registration p.back{
+	cursor: pointer;
+	grid-column: 2;
+	grid-row: 11;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 0;
+	color: blue;
+	font-family: 'Lobster', cursive;
+	text-decoration: underline;
+}
+section.registration p.back:hover{
+	color: black;
+}
+/* Авторизация */
+div.form section.authorization{
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+	grid-template-columns: 4vh auto 4vh;
+    grid-template-rows: 4vh repeat(6,5.2vh) 4vh;
+    background: white;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+section.authorization img{
+	grid-column: 3;
+	grid-row: 1;
+	width: 4vh;
+	height: 4vh;
+}
+section.authorization img:hover{
+	transform: rotate(22.5deg);
+}
+section.authorization p.title{
+	grid-column: 2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 3vh;
+	margin: 1.5vh 0;
+	color: black;
+	font-family: 'Lobster', cursive;
+}
+section.authorization input.login{
+	grid-column: 2;
+	grid-row: 5;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.authorization input.password{
+	grid-column: 2;
+	grid-row: 6;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	border:none;
+	font-family: 'Lobster', cursive;
+	width: 60%;
+}
+section.authorization p.enter{
+	grid-column: 2;
+	grid-row: 7;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 20%;
+	color: white;
+	background: black;
+	width: 60%;
+	cursor: pointer;
+	font-family: 'Lobster', cursive;
+}
+section.authorization p.enter:hover{
+	border-top-left-radius: 2vh;
+	border-bottom-right-radius: 2vh;
+}
+section.authorization p.back{
+	cursor: pointer;
+	grid-column: 2;
+	grid-row: 8;
+	text-align: center;
+	font-size: 2vh;
+	margin: 1vh 0;
+	color: blue;
+	font-family: 'Lobster', cursive;
+	text-decoration: underline;
+}
+section.authorization p.back:hover{
+	color: black;
+}
